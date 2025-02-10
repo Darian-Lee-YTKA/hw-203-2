@@ -2,8 +2,6 @@
 # PART 1
 import transformers
 from transformers import pipeline
-import transformers
-from transformers import pipeline
 import torch  # если используешь GPU
 
 pipe = pipeline("question-answering", model="deepset/roberta-base-squad2")
