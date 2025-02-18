@@ -207,8 +207,8 @@ from transformers import AutoModelForQuestionAnswering, TrainingArguments, Train
 
 model = AutoModelForQuestionAnswering.from_pretrained(model_name).to(device)
 lora_config = LoraConfig(
-    r=8,  
-    lora_alpha=8,  
+    r=30,  
+    lora_alpha=16,  
     lora_dropout=0.2,  
     bias="none",  
     task_type=TaskType.QUESTION_ANS 
